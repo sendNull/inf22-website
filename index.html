@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/simple_console.css">
+    <link rel="stylesheet" href="./assets/css/lettercrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- <link rel="stylesheet" href="./assets/css/splide.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+    <style>
+        /* html, body {
+			padding: 0;
+			margin: 0;
+			font-family: 'Simple Console', monospace;
+		}
+		pre {
+			position: absolute;
+			margin:0;
+			padding:0;
+			left:0;
+			top:0;
+            z-index: 0;
+			width:100vw;
+			height:100vh;
+            line-height: 1.2;
+			font-family: inherit;
+            font-size: 13px;
+		} */
+
+
+    </style>
+    <title>Informatika 22 Website</title>
+</head>
+<body>
+    <div class="cursor-follower" aria-hidden="true"></div>
+    <div class="container">
+        <div class="home-sec">
+            <nav>
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="./assets/img/logo.png" alt="">
+                    </div>
+                    <p class="logo">Informatika 2022</p>
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="#" class="">Home</a></li>
+                        <li><a href="#about" class="">About</a></li>
+                        <li><a href="#" class="">Our campus</a></li>
+                        <li><a href="#" class="">Gallery</a></li>
+                    </ul>
+                    <div class="cta-join">
+                        <a href="https://discord.gg/9xhGT28H">
+                            <p>Join us!</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hero-sec cursor-track">
+                <!-- <div class="cursor-home centered"></div> -->
+
+                <div class="grid-items cursor-blank">
+                    <div class="desc">
+                        <h1>Together we <span>learn.</span></h1>
+                        <p>Welcome to Informatika 22!</p>
+                    </div>
+                </div>
+                <div class="grid-items cursor-hover">
+                    <!-- <div class="desc">
+                        <h1>Together we <span>learn.</span></h1>
+                        <p>Welcome to Informatika 22!</p>
+                    </div> -->
+                </div>
+
+
+
+
+
+
+
+                <div class="explore">
+                    <a href="#about">
+                        <div class="arrow-bottom">
+                            <svg width="15" height="30" viewBox="0 0 15 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.0607 16.0607C13.6464 15.4749 13.6464 14.5251 13.0607 13.9393L3.51472 4.3934C2.92893 3.80761 1.97919 3.80761 1.3934 4.3934C0.807613 4.97918 0.807613 5.92893 1.3934 6.51472L9.87868 15L1.3934 23.4853C0.807611 24.0711 0.807611 25.0208 1.3934 25.6066C1.97918 26.1924 2.92893 26.1924 3.51472 25.6066L13.0607 16.0607ZM11 16.5L12 16.5L12 13.5L11 13.5L11 16.5Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <div class="arrow-bottom">
+                            <svg width="15" height="30" viewBox="0 0 15 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.0607 16.0607C13.6464 15.4749 13.6464 14.5251 13.0607 13.9393L3.51472 4.3934C2.92893 3.80761 1.97919 3.80761 1.3934 4.3934C0.807613 4.97918 0.807613 5.92893 1.3934 6.51472L9.87868 15L1.3934 23.4853C0.807611 24.0711 0.807611 25.0208 1.3934 25.6066C1.97918 26.1924 2.92893 26.1924 3.51472 25.6066L13.0607 16.0607ZM11 16.5L12 16.5L12 13.5L11 13.5L11 16.5Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-sec">
+            <!-- <pre aria-hidden="true"></pre> -->
+            <div class="announcement">
+                <div class="text-wrapper">
+                    <p class="title-announcement">
+                        It's JavaScript day!
+                    </p>
+                    <p class="desc-announcement">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In porro recusandae, vel ab cum aperiam quia provident enim veniam delectus at? Eum nulla unde quasi nisi magni vitae modi dolor!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about-sec" id="about">
+            <div class="grid-desc">
+                <div class="label">
+                    <p class="label-num">02</p>
+                </div>
+                <div class="desc">
+                    <p class="desc-text"><span class="blue">Informatika 2022</span> adalah tim dalam bidang teknologi informasi, berlokasi di <a href="#"><span class="blue">Tangerang Selatan</span></a>. Kami ahli dalam mengembangkan software dan mengamankan sistem jaringan. </p>
+                </div>
+            </div>
+            <div class="grid-desc">
+                <div class="label">
+                    <p class="label-num">&nbsp; &nbsp; &nbsp;</p>
+                </div>
+                <div class="desc">
+                    <p class="desc-text">Kami adalah tim kecil yang didanai sendiri yang berfokus pada <span class="blue">desain</span>, <span class="blue"> infrastruktur</span> dan <span class="blue"> keamanan jaringan</span>, dan juga <span class="blue">AI</span>. Kami memiliki 4 staf yang luar biasa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="staff-recrut">
+            
+            <div class="invite-caption">
+                <!-- Master the server., intelligence., Improve.  -->
+                <div class="label">
+                    <p class="label-num">03</p>
+                </div>
+                <p>Lorem, ipsum dolor. Lorem ipsum dolor sit amet.</p>
+                <div class="apply-button">
+                    <a href="#">Apply now!</a>
+                </div>
+            </div>
+            <section class="purpose splide" id="purposes" >
+                <div class="label">
+                    <!-- <p class="label-num">&nbsp; &nbsp; &nbsp;</p> -->
+                    <div class="logo-purpose">
+                        <div class="staff-logo">
+                            <img src="./assets/img/staff-logo.png" class="logo" alt="">
+                            <p>STF</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="purpose-desc">
+                                <div class="title-ct">
+                                    <p class="recrut-title">Master the server.</p>
+                                </div>
+                                <p class="captions">Be advanced in the server.</p>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="purpose-desc">
+                                <div class="title-ct">
+                                    <p class="recrut-title">Intelligence.</p>
+                                </div>
+                                <p class="captions">No more limits on knowledge.</p>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="purpose-desc">
+                                <div class="title-ct">
+                                    <p class="recrut-title">Improve.</p>
+                                </div>
+                                <p class="captions">Being competent and focused.</p>
+                            </div>
+                          </li>
+                      </ul>
+                </div>
+
+            </section>
+        </div>
+
+        
+        <div class="collab-sec">
+            <div class="grid-desc">
+                <div class="label">
+                    <p class="label-num">03</p>
+                </div>
+                <div class="desc">
+                    <p class="desc-text">Who we<br><span class="blue">work with</span></p>
+                </div>
+            </div>
+            <div class="grid-desc">
+                <div class="label">
+                    <p class="label-num">&nbsp; &nbsp; &nbsp;</p>
+                </div>
+                <div class="desc">
+                    <!-- <p class="desc-text">We work with a broad range of clients across Government, International Development, Health, Education, Environment, Agriculture, Corporate & Professional Associations.</p> -->
+                    <p class="desc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus delectus saepe quia labore blanditiis fugit nesciunt explicabo quisquam eaque impedit, ea rem nisi deserunt at?</p>
+                    <p class="desc-text">We see what can be, and we help clients achieve it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <section class="splide" id="collab">
+             
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <img class="carousel-img" src="./assets/img/midjourney.svg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img class="carousel-img" src="./assets/img/himaforka.svg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img class="carousel-img" src="./assets/img/upj.svg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img class="carousel-img" src="./assets/img/openai.svg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img class="carousel-img" src="./assets/img/github.svg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img class="carousel-img" src="./assets/img/google.svg" alt="">
+                          </li>
+                      </ul>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="our-team">
+            <div class="headline">
+                <div class="label">
+                    <p class="label-num">04</p>
+                </div>
+                <div class="desc">
+                    <p class="desc-text">Our Team<span class="blue">.</span></p>
+                </div>
+            </div>
+            <div class="team-grid" id="freewall">
+                <div class="grid-items">
+                    <div class="photo-wrapper" style="width: 100%;">
+                        <img class="lozad" src="./assets/img/john.png" width="100%" alt="John Bryan">
+                    </div>
+
+                    <p class="name-worker">John Bryan </p>
+                    <p class="title-worker blue">Founder</p>
+                    <p class="worker-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam dicta ea excepturi ad soluta voluptatem ullam. Dolores pariatur voluptas quidem assumenda tempora nesciunt repudiandae eum aliquid deleniti doloribus ipsa eligendi nihil id quos quia velit, autem tenetur est reprehenderit. Sunt.</p>
+                </div>
+                <div class="grid-items">
+                    
+                    <div class="photo-wrapper" style="width: 100%;">
+                        <img class="lozad" src="./assets/img/vino.png" width="100%" alt="Halvino Iqbal">
+                    </div>
+
+                    <p class="name-worker">Halvino Iqbal</p>
+                    <p class="title-worker blue">Discord Bot Developer</p>
+                    <p class="worker-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perspiciatis tempore repellat ea debitis aliquid! Harum nesciunt consequuntur ab distinctio!</p>
+                </div>
+                <div class="grid-items">
+                    <div class="photo-wrapper" style="width: 100%;">
+                        <img class="lozad" src="./assets/img/rio.png" width="100%" alt="M. Satrio">
+                    </div>
+
+                    <p class="name-worker">Muhammad Satrio </p>
+                    <p class="title-worker blue">Scripter</p>
+                    <p class="worker-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quia asperiores maiores quasi temporibus porro facilis sed illum ducimus repudiandae consequatur magni, quam suscipit. Exercitationem doloremque voluptatem ea quos ex?</p>
+                </div>
+                <div class="grid-items">
+                    <div class="photo-wrapper" style="width: 100%;">
+                        <img class="lozad" src="./assets/img/kafka.png" width="100%" alt="John Bryan">
+                    </div>
+
+                    <p class="name-worker">Kafka Ramadityo </p>
+                    <p class="title-worker blue">Web Developer</p>
+                    <p class="worker-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum recusandae dolor aperiam? Velit, exercitationem eius quo, est incidunt numquam praesentium ipsam, in impedit eos commodi aut sapiente dolore reiciendis neque?</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <span></span>
+            <p>© Copyright 2023 - Informatika 2022</p>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- <script type="module">
+        import { run } from '/src/run.js'
+		import * as program from '/src/programs/basics/time_milliseconds.js'
+		run(program, { element : document.querySelector('pre') }).then(function(e){
+			console.log(e)
+		}).catch(function(e) {
+			console.warn(e.message)
+			console.log(e.error)
+		})
+    </script> -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
