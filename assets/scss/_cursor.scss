@@ -1,0 +1,51 @@
+
+@mixin cursor{
+    .opacity-on{
+        background: white;
+    }
+    .opacity-off{
+        background: transparent;
+    }
+
+    // .centered{
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
+
+    .cursor-follower{
+        position: fixed;
+        background-color: white;
+        mix-blend-mode: difference;
+        // margin-left: 300px;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        z-index: 100;
+        transition: 500ms cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+        user-select: none;
+        pointer-events: none;
+        // z-index: 10000;
+        transform: scale(2);
+    }
+
+    .bigger{
+        transform: scale(2);
+    }
+    
+    .opacity-none{
+        opacity: 0;
+    }
+    .opacity-full{
+        opacity: .7;
+    }
+    .border-none{
+        /* background-color: white; */
+        border: 0px solid transparent;
+    }
+    .fill-on{
+        background-color: white;
+    }
+}

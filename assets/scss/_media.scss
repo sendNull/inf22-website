@@ -1,0 +1,680 @@
+
+@mixin mediaQueries {
+    @media screen and (max-width: 699px) {
+
+        .container{
+
+            .carousel-container {
+                padding: 3em 0 3em 0;
+                max-width: 100%;
+                background: white;
+                position: relative;
+        
+                .splide{
+        
+                    .splide__track {
+        
+                        .splide__list{
+        
+                            .splide__slide{
+                                display: flex;
+        
+                                .carousel-img{
+                                    transform: scale(.8);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .collab-sec{
+                max-width: 100%;
+                background: white;
+                // height: 50vh;
+                padding: 3em 20px 3em 20px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 0rem;
+        
+                .grid-desc{
+                    // border: 1px solid red;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    .label{
+                        position: relative;
+                        position: relative;
+                        color: $primary-color;
+        
+                        .label-num{
+                            @include label;
+                            @include sans-serif;
+                            width: max-content;
+                            // background: red;
+                            padding: 0 20px 10px 0;
+                            position: relative;
+        
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                height: 2px;
+                                background: rgba(0, 0, 0, .6);
+        
+                            }
+                        }
+        
+                    }
+
+                    &:nth-child(2){
+                        .label{
+                            position: relative;
+                            position: relative;
+                            color: $primary-color;
+                            display: none;
+            
+                            .label-num{
+                                @include label;
+                                @include sans-serif;
+                                width: max-content;
+                                // background: red;
+                                padding: 0 20px 10px 0;
+                                position: relative;
+            
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    height: 2px;
+                                    background: rgba(0, 0, 0, .6);
+            
+                                }
+                            }
+            
+                        }
+                    }
+        
+                    .desc{
+                        padding-top: 1rem;
+                    
+                        .desc-text{
+                            // font-weight: 400;
+                            line-height: 100%;
+                            @include sans-serif;
+                            // @include headline-responsive-1;
+                            font-size: clamp(3rem, 10vw, 6rem);
+                            @include bold;
+                            padding-top: 2rem;
+                        }
+                    }
+        
+                    &:nth-child(2){
+                        // border: 1px solid red;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        
+                        .label{
+                            position: relative;
+                            color: $primary-color;
+            
+                            .label-num{
+                                @include label;
+                                @include sans-serif;
+                                width: max-content;
+                                // background: red;
+                                padding: 0 20px 10px 0;
+                                position: relative;
+            
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    height: 2px;
+                                    background: rgba(0, 0, 0, .6);
+            
+                                }
+                            }
+            
+                        }
+            
+                        .desc{
+                            padding-top: 1rem;
+                        
+                            .desc-text{
+                                // font-weight: 400;
+                                // line-height: 100%;
+                                @include sans-serif;
+                                @include medium-1;
+                                // @include fs-2;
+                                font-size: clamp(17px, 4vw, 2rem);
+                                
+                                // @include medium;
+                                padding-top: 2rem;
+                            }
+                        }
+            
+                    }
+                }
+            }
+
+            .event-sec{
+                max-width: 100%;
+                padding: 3em 20px 3em 20px;
+                // height: 50vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // flex-direction: column;
+                background: rgb(240, 219, 79);
+                box-shadow: 0px 0px 30px -20px rgb(240, 219, 79);
+        
+                .announcement{
+                    .text-wrapper{
+                        margin: auto;
+                        width: 100%;
+                        // background: green;
+                        @include sans-serif;
+                        @include text-center;
+                        color: $black-500;
+        
+                        .title-announcement{
+                            // @include headline-responsive;
+                            font-size: clamp(30px, 5vw, 4rem);
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                        }
+                        .desc-announcement{
+                            @include fs-2;
+                            font-weight: 600;
+                        }
+                    }
+                }
+        
+            }
+
+            .home-sec{
+                height: 100%;
+            
+                nav{
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 80px;
+                    z-index: 10;
+                    background: $black-600;
+                    @include d-flex-center-between;
+                    // @include padding-3-all-responsive;
+                    padding:  0 2em 0 2em;
+                    position: fixed;
+        
+                    .logo-container{
+                        @include d-flex;
+                        align-items: center;
+                        gap: 15px;
+                        
+                        .logo-img{
+                            margin-top: 10px;
+        
+                            img{
+                                width: 65px;
+                                filter: brightness(150%);
+                            }
+                        }
+        
+                        .logo{
+                            display: none;
+                        }
+                    }
+                    .hamburger{
+                        position: relative;
+                        z-index: 99;
+                        display: block;
+                        height: 40px;
+                        width: 30px;
+                        // background: maroon;
+
+                        &.active{
+                            div{
+                                // position: relative;
+                                position: absolute;
+                                // top: 50%;
+                                left:0;
+                                // transform: translateY(-50%);
+                                background: white;
+                                height: 2px;
+                                transition: all  0.4s ease;
+                                transform-origin: right;
+    
+                                &:nth-child(1){
+    
+                                    position: absolute;
+                                    top: 10px;
+                                    width: 100%;
+                                    transform: scaleX(.5);
+                                    transition: all  0.4s ease;
+                                }
+                                &:nth-child(2){
+    
+                                    position: absolute;
+                                    top: 20px;
+                                    width: 100%;
+                                    transform: scaleX(1);
+                                    transition: all  0.4s ease;
+                                }
+                                &:nth-child(3){
+                                    position: absolute;
+                                    top: 30px;
+                                    width: 100%;
+                                    height: 2px;
+                                    transform: scaleX(.5);
+                                    transition: all  0.4s ease;
+                                }
+                            }
+                        }
+                        div{
+                            // position: relative;
+                            position: absolute;
+                            // top: 50%;
+                            left:0;
+                            // transform: translateY(-50%);
+                            background: white;
+                            height: 2px;
+                            transition: all  0.4s ease;
+                            transform-origin: right;
+
+                            &:nth-child(1){
+
+                                position: absolute;
+                                top: 10px;
+                                width: 100%;
+                                transition: all  0.4s ease;
+                            }
+                            &:nth-child(2){
+
+                                position: absolute;
+                                top: 20px;
+                                width: 100%;
+                                transform: scaleX(.5);
+                                transition: all  0.4s ease;
+                            }
+                            &:nth-child(3){
+                                position: absolute;
+                                top: 30px;
+                                width: 100%;
+                                height: 2px;
+                                transition: all  0.4s ease;
+                            }
+                        }
+                    }
+                    .menu-list{
+                        position: fixed;
+                        background: $black-600;
+                        inset: 0;
+                        @include d-flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                        gap: 3rem;
+                        transition: all 1s cubic-bezier(0.86,0,0.07,1);
+
+                        &.active{
+                            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                        }
+            
+                        ul{
+                            @include d-flex;
+                            align-items: center;
+                            flex-direction: column;
+                            gap: 2rem;
+                            
+                            li{
+                            
+                                a{
+                                    @include fs-1;
+                                    @include monospace;
+                                    color: $white-500;
+                                    transition: color 200ms ease;
+            
+                                    &:hover{
+                                        color: $white-700;
+                                    }
+                                }
+                            }
+                        }
+            
+                        .cta-join{
+                            // @include d-flex-center-center;
+                            display: flex;
+                            justify-content: center;
+                            width: 150px;
+                            height: 40px;
+                            margin-left: 0;
+                            background: $primary-active;
+                            position: relative;
+                            padding: 1px;
+                            transition: all 500ms ease-out; 
+            
+            
+                            a{
+                                width: 100%;
+                                height: 100%;
+                                background: $black-600;
+                                display: flex;
+                                position: relative;
+                                align-items: center;
+                                @include monospace;
+                                justify-content: center;
+            
+                                p{
+                                    position: relative;
+                                    z-index: 3;
+                                    @include fs-1;
+                                    @include monospace;
+                                    color: $primary-active;
+                                    transition: color 200ms cubic-bezier(0.19,1,0.22,1);
+                                }
+            
+                                &::before{
+                                    content:'';
+                                    position: absolute;
+                                    background: $primary-active;
+                                    inset: 0;
+                                    transform: scaleX(0);
+                                    transform-origin: right;
+                                    transition: transform 500ms cubic-bezier(0.19,1,0.22,1);
+                                }
+            
+                                &:hover{
+                                    p{
+                                        color: $black-600;
+                                    }
+                                    &::before{
+                                        transform: scaleX(1);
+                                        transform-origin: left;
+                                    }
+                                }
+                            }
+        
+                            &:hover{
+                                box-shadow: 0px 0px 40px 0px rgb(48, 131, 240);
+                            }
+                        }
+                    }
+                }
+        
+        
+                .hero-sec{
+                    position: relative;
+                    z-index:3;
+                    max-width: 100%;
+                    height: 100vh;
+                    display: flex;
+                    gap: 2rem;
+                    @include padding-3;
+
+                    .grid-items{
+                        display: flex;
+                        align-items: center;
+        
+                        &.cursor-hover{
+                            display: none;
+                            position: relative;
+                        }
+                        .desc{
+                            h1{
+                                text-align: center;
+                            }
+                            p{
+                                text-align: center;
+                            }
+                        }
+                    }
+        
+                    .explore{
+                        position: absolute;
+                        left: 50%;
+                        bottom: 30px;
+                        color: $white-600;
+                        @include monospace;
+                        transform: translateX(-50%);
+                        @include d-flex;
+                        flex-direction: column;
+        
+                        .arrow-bottom{
+                            @include arrow;
+                            animation-delay: 350ms;
+                            rotate: 90deg;
+        
+                            &:nth-child(2){
+                                animation-delay: 500ms;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about-sec{
+                max-width: 100%;
+                background: white;
+                padding: 3em 20px 3em 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3rem;
+        
+                .grid-desc{
+                    
+                    .label{
+                        position: relative;
+                        position: relative;
+                        color: $primary-color;
+        
+                        .label-num{
+                            @include label;
+                            @include sans-serif;
+                            width: max-content;
+                            padding: 0 20px 10px 0;
+                            position: relative;
+        
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                height: 2px;
+                                background: $black-500;
+                            }
+                        }
+                    }
+                    .desc{
+                        padding-top: 1rem;
+                    
+                        .desc-text{
+                            color: $black-500;
+                            @include sans-serif;
+                            @include subtitle-responsive;
+                        }
+                    }
+                }
+            }
+
+            .our-team{
+                margin-top: 3rem;
+                max-width: 100%;
+                // height: 100vh;
+                background: $black-600;
+                // @include padding-3-all-responsive;
+                padding: 3em 20px 3em 20px;
+    
+                .team-grid{
+                    margin-top: 20px;
+                    position: relative;
+                    width: 100%;
+                    display: grid;
+                    color: $white-700;
+                    @include sans-serif;
+                    // grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: 1fr;
+                    gap: 2rem;
+                }
+            }
+            .staff-recrut{
+                max-width: 100%;
+                // height: 40vh;
+                background: $purple-700;
+                // @include padding-3-all-responsive;
+                padding: 3em 20px 3em 20px;
+                @include d-flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 30px;
+                position: relative;
+        
+                .purpose{
+                    width: 100%;
+                    height: 100%;
+                    .label{
+        
+                        .logo-purpose{
+                            .staff-logo{
+                                width: 80px;
+                                filter: brightness(0) invert(1);
+                                // background: red;
+                                // padding: 0 20px 20px 0;
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                @include label;
+                                @include sans-serif;
+                                @include medium;
+        
+                                .logo{
+                                    margin-right: 10px;
+                                    width: 80px;
+                                }
+                            }
+                            
+                            // &::before{
+                            //     content: "";
+                            //     position: absolute;
+                            //     bottom: 0;
+                            //     left: 0;
+                            //     width: 60px;
+                            //     // right: 0;
+                            //     height: 2px;
+                            //     // background: rgba(0, 0, 0, .6);
+                            //     background: $purple-500;
+            
+                            // }
+                        }
+                    }
+        
+                    // max-width: max-content;
+                    .purpose-desc{
+                        max-width: 100%;
+                        .title-ct{
+                            // padding: 10px 20px 10px 20px;
+                            // background: $purple-600;
+                            height: max-content;
+                
+                            .recrut-title{
+                                @include medium;
+                                @include headline-responsive-1;
+                                @include sans-serif;
+                                // color: $purple-700;
+                                line-height: 100%;
+                                color: $white-700;
+                                background: $purple-600;
+                                // max-width: fit-content;
+                            }
+                            
+                        }
+                        
+                        .captions{
+                            // max-width: fit-content;
+                            margin-top: 3rem;
+                            font-size: clamp(20px, 5vw, 2rem);
+                            color: $white-700;
+                        }
+                    }
+                    
+                }
+        
+                .invite-caption{
+                    @include sans-serif;
+                    @include subtitle-responsive;
+                    color: $white-700;
+                    max-width: 20em;
+                    height: 100%;
+                    // background: maroon;
+                    .label{
+                        position: relative;
+                        position: relative;
+                        color: $white-700;
+        
+                        .label-num{
+                            @include label;
+                            @include sans-serif;
+                            width: max-content;
+                            // background: red;
+                            padding: 0 20px 20px 0;
+                            position: relative;
+        
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                height: 2px;
+                                // background: rgba(0, 0, 0, .6);
+                                background: $purple-500;
+        
+                            }
+                        }
+                    }
+        
+                    .purple{
+                        color: $purple-500;
+                    }
+        
+                    .apply-button{
+                        margin-top: 3rem;
+                        width: 200px;
+                        height: 70px;
+                        background: $purple-800;
+                        font-size: 25px;
+                        transition: all 200ms ease-out;
+        
+                        &:hover{
+                            background: #402962;
+                        }
+                        &:focus{
+                            background: #583c82;
+                        }
+        
+                        a{
+                            @include d-flex-center-center;
+                            width: 100%;
+                            height: 100%;
+                            color: $white-700
+                        }
+        
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+
+@mixin monospace{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+@mixin sans-serif{
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin fs-1{
+    font-size: 16px;
+}
+
+@mixin fs-2{
+    font-size: 20px;
+}
+@mixin label{
+    font-size: clamp(2rem, 3vw, 2rem);
+}
+
+@mixin headline{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+@mixin subtitle-responsive{
+    font-size: clamp(1rem, 4vw, 3rem);
+}
+
+@mixin count{
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+@mixin medium{
+    font-weight: 600;
+}
+@mixin bold{
+    font-weight: 700;
+}
+@mixin medium-1{
+    font-weight: 400;
+}
+
+
+
+
+
+@mixin headline-responsive{
+    font-size: clamp(30px, 12vw, 5rem);
+    font-weight: 700;
+}
+@mixin headline-responsive-contact{
+    font-size: clamp(30px, 20vw, 8rem);
+    font-weight: 700;
+}
+@mixin headline-responsive-1{
+    font-size: clamp(30px, 5vw, 5rem);
+}
